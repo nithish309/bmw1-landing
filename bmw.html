@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M-Sports</title>
+    <link rel="stylesheet" href="bmw.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="home">
+        <p class="para">
+            <span class="para1 spara"></span> 
+            <span class="para1 spara">BMW</span> 
+            <span class="para1 spara colors">M-sport</span>
+            <span class="para1 spara">cars</span>
+            <span class="para1 spara">traditionally</span>
+            <span class="para1 spara">include</span>
+            <span class="para1 spara colors">modified</span>
+            <span class="para1 spara colors">engines</span>
+            <span class="para1 spara">,</span>
+            <span class="para1 spara colors">transmissions</span>
+            <span class="para1 spara">,</span>
+            <span class="para1 spara colors">suspensions</span>
+            <span class="para1 spara">,</span>
+            <span class="para1 spara colors">interior trims</span>
+            <span class="para1 spara">,</span>
+            <span class="para1 spara colors">aerodynamics</span>
+            <span class="para1 spara">and</span>
+            <span class="para1 spara colors">exterior</span>
+            <span class="para1 spara colors">modifications</span>
+            <span class="para1 spara">to</span>  
+            <span class="para1 spara">set</span>
+            <span class="para1 spara">them</span>
+            <span class="para1 spara">apart</span>
+            <span class="para1 spara">from</span>
+            <span class="para1 spara">their</span>
+            <span class="para1 spara">counterparts.</span>                 
+        </p>
+    </section>
+    
+    <!-- Image Slider Section -->
+    <section id="image" class="sec-bg">
+        <div class="container-sec2 mb-4">
+            <div id="carouselExampleIndicators" class="carousel slide"> <!--data-bs-interval="4000" -> is used for time interval and data-bs-ride="carousel" -> for automatically slide the image -->
+                <div class="carousel-inner w-75 mt-4 rounded-4" id="inner"><!--carousel-inner is a Bootstrap class that is used to define the inner part of a carousel. All carousel items (slides) should be placed inside this container-->
+                     <div class="carousel-indicators"><!--carousel-indicators typically contains the indicators (buttons or dots) that represent each slide 
+                        Indicators help users navigate between slides or indicate the current slide. -->
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-item active" id="text1"> <!--carousel-item contains the actual slides (carousel-item elements) that will be displayed in the carousel.-->
+                        <div class="overlay-text">
+                            <h1 class="text-overlay-head">What does <span class="text-overlay-span">M8</span> mean?</h1>
+                            <p class="text-overlay-para"> The BMW <span class="text-overlay-span">M8</span> is the high performance <span class="text-overlay-span">version</span> of the <span class="text-overlay-span">BMW 8 Series</span> , marketed under the <span class="text-overlay-span">BMW M</span> sub-brand .
+                                Typically powered by a <span class="text-overlay-span">high-performance engine</span> , often a <span class="text-overlay-span">V8 or V12</span> .
+                                Offers exceptional <span class="text-overlay-span">horsepower</span> and <span class="text-overlay-span">torque</span> for exhilarating acceleration and <span class="text-overlay-span">top speeds</span> .
+                                Advanced <span class="text-overlay-span">drivetrain and suspension</span> systems for superior handling and <span class="text-overlay-span">stability</span>. Features a aggressive and <span class="text-overlay-span">sleek design</span> that enhances <span class="text-overlay-span">aerodynamics </span>.
+                                <span class="text-overlay-span">Distinctive styling</span> cues <span class="text-overlay-span">differentiate</span> it from <span class="text-overlay-span">standard 8 Series</span> models.
+                                Often includes <span class="text-overlay-span">unique M-specific elements</span> such as <span class="text-overlay-span">larger air intakes, M badging, and quad exhaust pipes.</span>Available in various body styles, including <span class="text-overlay-span">coupe, convertible, and gran coupe (four-door)</span>.
+                                Offers different performance levels under the M lineup, such as the M8 Competition with enhanced performance features.</p>
+                        </div>
+                        <img src="https://wallpapercave.com/wp/wp13679673.jpg" class="d-block w-100 slider-image" alt="Model 1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <button type="button" class="dropdown-arrow" id="btn1" onclick="toggleText('text1')">
+                            <i class="fa fa-chevron-up"></i>
+                          </button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" id="text2">
+                        <div class="overlay-text">
+                            <h1 class="text-overlay-head">About <span class="text-overlay-span">M8 Engine</span></h1>
+                            <p class="text-overlay-para">The M8 is powered by a <span class="text-overlay-span">twin-turbo 4.4-liter V-8</span> that makes <span class="text-overlay-span">617 horsepower</span> and <span class="text-overlay-span">749.77 newton-metre of torque </span>with <span class="text-overlay-span">4395 cubic-centimetres </span>.
+                            This power enables <span class="text-overlay-span">rapid acceleration</span> and <span class="text-overlay-span">high-speed</span> performance.
+                            The M8 features advanced performance technologies such as <span class="text-overlay-span">BMW's M</span> xDrive <span class="text-overlay-span">all-wheel-drive</span> system, which helps optimize traction and <span class="text-overlay-span">handling in various driving conditions</span>.
+                            The M8 typically comes with an advanced transmission system, such as an <span class="text-overlay-span">8-speed M Steptronic automatic transmission</span>, designed to <span class="text-overlay-span">deliver quick gear changes and smooth driving experience</span>.
+                            While performance is a priority, BMW also incorporates technologies for improved  <span class="text-overlay-span">fuel efficiency</span> where possible, though exact figures can vary  <span class="text-overlay-span">based on driving conditions</span> and engine configuration.</p>
+                        </div>
+                        <img src="https://wallpapercave.com/wp/wp3798003.jpg" class="d-block w-100 slider-image" alt="Model 2">
+                        <div class="carousel-caption d-none d-md-block">
+                          <button type="button" class="dropdown-arrow" id="btn2" onclick="toggleText('text2')">
+                            <i class="fa fa-chevron-up"></i>
+                          </button>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item" id="text3">
+                        <div class="overlay-text">
+                            <h1 class="text-overlay-head">About <span class="text-overlay-span">M8 luxury</span></h1>
+                            <p class="text-overlay-para">The M8 features <span class="text-overlay-span">high-quality materials throughout its interior</span>, including <span class="text-overlay-span">fine leather upholstery</span>, genuine <span class="text-overlay-span">wood or carbon fiber trim</span> and <span class="text-overlay-span">aluminum accents</span>. These materials are meticulously crafted to <span class="text-overlay-span">enhance comfort and aesthetic appeal</span>.
+                            The interior of the M8 is designed with comfort in mind, offering features such as <span class="text-overlay-span">multi-way power-adjustable seats with heating, ventilation, and massage functions</span>. <span class="text-overlay-span">Advanced climate control systems, ambient lighting, and customizable driving modes further </span> <span class="text-overlay-span">enhance the luxury experience</span>.
+                            The M8 is equipped with BMW’s latest <span class="text-overlay-span">iDrive infotainment system</span>, which includes a <span class="text-overlay-span">high-resolution touchscreen display, voice commands, navigation, smartphone integration</span>, 
+                            <span class="text-overlay-span">cruise control, lane departure warning, parking assistance</span> and <span class="text-overlay-span">surround-view cameras</span>, enhancing convenience and safety.</p>
+                        </div>
+                        <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20191009035448_BMW-M8_Gran_Coupe_dashboard.jpg" class="d-block w-100 slider-image" alt="Model 3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <button type="button" class="dropdown-arrow" id="btn3" onclick="toggleText('text3')">
+                            <i class="fa fa-chevron-up"></i>
+                          </button>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary rounded-4" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-secondary rounded-4" aria-hidden="true" id="pre"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model section -->
+     <section  class="model-sec">
+        <h3 class="m-3 model-head">Models</h3>
+        <div class="model-container d-flex justify-content-around">
+            <div class="model">
+                <img src="BMW-M8-PNG-HD-Isolated3.png" class="model-img2 mb-1 img-fluid" alt="bmw-coupe">
+                <p class="model-para">BMW M8 Coupe</p>
+                <p class="model-inner-para"><span class="model-span">Price :</span> ₹ 2.24 Cr (ex-showroom)</p>
+                <p class="model-inner-para"><span class="model-span">Engine :</span> twin-turbo 4.4-liter V-8</p>
+                <p class="model-inner-para"><span class="model-span">No. of cylinders :</span> 8</p>
+                <p class="model-inner-para"><span class="model-span">Displacement :</span> 4395 CC</p>
+                <p class="model-inner-para"><span class="model-span">Horsepower :</span> 617 hp@6000 rpm</p>
+                <p class="model-inner-para"><span class="model-span">Torque :</span> 749.77 Nm</p>
+                <p class="model-inner-para"><span class="model-span">Fuel Type :</span> Petrol</p>
+                <p class="model-inner-para"><span class="model-span">Transmission :</span> 8-speed Automatic</p>
+                <p class="model-inner-para"><span class="model-span">Milleage :</span> 8.7 kmpl</p>
+                <p class="model-inner-para"><span class="model-span">Acceleration :</span> 3.2 sec(0-100)</p>
+                <p class="model-inner-para"><span class="model-span">DriveTrain :</span> AWD</p>
+                <p class="model-inner-para"><span class="model-span">Suspension :</span> Adaptive M Suspension</p>
+                <p class="model-inner-para"><span class="model-span">Doors :</span> 2</p>
+                <p class="model-inner-para"><span class="model-span">Boot Space :</span> 420 liters</p>
+                <p class="model-inner-para"><span class="model-span">No. of Airbags :</span> 6</p>
+                <p class="model-inner-para"><span class="model-span">Side Airbag-Rear :</span> No</p>
+                <p class="model-inner-para"><span class="model-span">Child Safety Locks :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Anti-Theft Alarm :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Seat Belt Warning :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Engine Immobilizer :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Alert :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Tyre Pressure Monitor :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Sensing Auto Door Lock :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">360 View Camera :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Advance Safety Features :</span> ABS,CBC,DSC,ADB,DTC</p>
+                <p class="model-inner-para"><span class="model-span">Touchscreen :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Connectivity :</span> Android Auto and Apple CarPlay</p>
+                <a href="https://www.bmwusa.com/vehicles/m-models/m8-convertible/overview.html" class="model-btn" target="_blank">Know More...</a>
+            </div>
+            <div class="model">
+                <img src="https://images.dealer.com/ddc/vehicles/2023/BMW/M8/Convertible/perspective/front-left/2022_74.png" class="model-img2 mb-1 img-fluid" alt="bmw-coupe">
+                <p class="model-para">BMW M8 Convertible</p>
+                <p class="model-inner-para"><span class="model-span">Price :</span> ₹ 2.24 Cr (ex-showroom)</p>
+                <p class="model-inner-para"><span class="model-span">Engine :</span> twin-turbo 4.4-liter V-8</p>
+                <p class="model-inner-para"><span class="model-span">No. of cylinders :</span> 8</p>
+                <p class="model-inner-para"><span class="model-span">Displacement :</span> 4395 CC</p>
+                <p class="model-inner-para"><span class="model-span">Horsepower :</span> 617 hp@6000 rpm</p>
+                <p class="model-inner-para"><span class="model-span">Torque :</span> 749.77 Nm</p>
+                <p class="model-inner-para"><span class="model-span">Fuel Type :</span> Petrol</p>
+                <p class="model-inner-para"><span class="model-span">Transmission :</span> 8-speed Automatic</p>
+                <p class="model-inner-para"><span class="model-span">Milleage :</span> 8.7 kmpl</p>
+                <p class="model-inner-para"><span class="model-span">Acceleration :</span> 3.2 sec(0-100)</p>
+                <p class="model-inner-para"><span class="model-span">DriveTrain :</span> AWD</p>
+                <p class="model-inner-para"><span class="model-span">Suspension :</span> Adaptive M Suspension</p>
+                <p class="model-inner-para"><span class="model-span">Doors :</span> 2</p>
+                <p class="model-inner-para"><span class="model-span">Boot Space :</span> 420 liters</p>
+                <p class="model-inner-para"><span class="model-span">No. of Airbags :</span> 6</p>
+                <p class="model-inner-para"><span class="model-span">Side Airbag-Rear :</span> No</p>
+                <p class="model-inner-para"><span class="model-span">Child Safety Locks :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Anti-Theft Alarm :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Seat Belt Warning :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Engine Immobilizer :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Alert :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Tyre Pressure Monitor :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Sensing Auto Door Lock :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">360 View Camera :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Advance Safety Features :</span> ABS,CBC,DSC,ADB,DTC</p>
+                <p class="model-inner-para"><span class="model-span">Touchscreen :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Connectivity :</span> Android Auto and Apple CarPlay</p>
+                <a href="https://www.bmwusa.com/vehicles/m-models/m8-convertible/overview.html" class="model-btn" target="_blank">Know More...</a>
+            </div>
+            <div class="model">
+                <img src="PngItem_59566.png" class="model-img3 mb-1 img-fluid" alt="bmw-coupe">
+                <p class="model-para">BMW M8 Gran Coupe</p>
+
+                <p class="model-inner-para"><span class="model-span">Price :</span> ₹ 2.24 Cr (ex-showroom)</p>
+                <p class="model-inner-para"><span class="model-span">Engine :</span> twin-turbo 4.4-liter V-8</p>
+                <p class="model-inner-para"><span class="model-span">No. of cylinders :</span> 8</p>
+                <p class="model-inner-para"><span class="model-span">Displacement :</span> 4395 CC</p>
+                <p class="model-inner-para"><span class="model-span">Horsepower :</span> 617 hp@6000 rpm</p>
+                <p class="model-inner-para"><span class="model-span">Torque :</span> 749.77 Nm</p>
+                <p class="model-inner-para"><span class="model-span">Fuel Type :</span> Petrol</p>
+                <p class="model-inner-para"><span class="model-span">Transmission :</span> 8-speed Automatic</p>
+                <p class="model-inner-para"><span class="model-span">Milleage :</span> 8.7 kmpl</p>
+                <p class="model-inner-para"><span class="model-span">Acceleration :</span> 3.2 sec(0-100)</p>
+                <p class="model-inner-para"><span class="model-span">DriveTrain :</span> AWD</p>
+                <p class="model-inner-para"><span class="model-span">Suspension :</span> Adaptive M Suspension</p>
+                <p class="model-inner-para"><span class="model-span">Doors :</span> 4</p>
+                <p class="model-inner-para"><span class="model-span">Boot Space :</span> 420 liters</p>
+                <p class="model-inner-para"><span class="model-span">No. of Airbags :</span> 6</p>
+                <p class="model-inner-para"><span class="model-span">Side Airbag-Rear :</span> No</p>
+                <p class="model-inner-para"><span class="model-span">Child Safety Locks :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Anti-Theft Alarm :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Seat Belt Warning :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Engine Immobilizer :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Alert :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Tyre Pressure Monitor :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Speed Sensing Auto Door Lock :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">360 View Camera :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Advance Safety Features :</span> ABS,CBC,DSC,ADB,DTC</p>
+                <p class="model-inner-para"><span class="model-span">Touchscreen :</span> yes</p>
+                <p class="model-inner-para"><span class="model-span">Connectivity :</span> Android Auto and Apple CarPlay</p>
+                <a href="https://www.bmwusa.com/vehicles/m-models/m8-gran-coupe/overview.html" class="model-btn" target="_blank">Know More...</a>
+            </div>
+        </div>    
+     </section>
+     <footer style="background-color: #c6c6c6; padding: 20px; text-align: center;">
+        <p>&copy; 2024 BMW. All rights reserved.</p>
+        <p>
+          <a href="https://www.yourcompany.com/privacy-policy" style="margin-right: 15px;">Privacy Policy</a>
+          <a href="https://www.yourcompany.com/terms-of-service" style="margin-right: 15px;">Terms of Service</a>
+          <a href="https://www.yourcompany.com/contact">Contact Us</a>
+        </p>
+        <p>
+          Follow us on:
+          <a href="https://www.facebook.com/yourcompany" style="margin-left: 5px;">Facebook</a> |
+          <a href="https://www.twitter.com/yourcompany" style="margin-left: 5px;">Twitter</a> |
+          <a href="https://www.instagram.com/yourcompany" style="margin-left: 5px;">Instagram</a>
+        </p>
+      </footer>      
+    <script src="bmw.js">    
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
