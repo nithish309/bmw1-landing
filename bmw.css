@@ -197,6 +197,7 @@ section {
     height: 150px;
     object-fit: contain;
     margin-top: 2em;
+    margin-top: 0em;
     animation: borderRun 2s infinite;
 }
 .model-img2 {
