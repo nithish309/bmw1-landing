@@ -196,8 +196,7 @@ section {
     width: 300px;
     height: 150px;
     object-fit: contain;
-    margin-top: 2em;
-    margin-top: 0em;
+    margin-top: 0;
     animation: borderRun 2s infinite;
 }
 .model-img2 {
@@ -305,6 +304,7 @@ section {
         height: 150px;
         object-fit: contain;
         animation: borderRun 2s infinite;
+        margin-top: 2.5em;
     }
     .model-img {
         width: 300px;
@@ -312,6 +312,7 @@ section {
         object-fit: contain;
         /* margin-bottom: 3.4em; */
         animation: borderRun 2s infinite;
+        margin-top: 1.8em;
     }
     .model-img2 {
         width: 300px;
